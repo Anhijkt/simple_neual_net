@@ -1,0 +1,9 @@
+in_layer 2
+layer b 2
+out_layer 3
+in 0 b 1 1
+in 1 b 0 1
+b 0 out 0 1
+b 0 out 1 1
+b 1 out 1 1
+b 1 out 2 1
