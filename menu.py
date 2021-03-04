@@ -63,6 +63,7 @@ out_text = Text(width=15, height=30)
 in_text = Text(width=15, height=30)
 n = net.Net()
 
+root.title("Perceptron designer")
 c.pack(side=LEFT)
 out_text.pack(side=RIGHT)
 in_text.pack(side=RIGHT)
