@@ -176,6 +176,8 @@ def export_net(n, file_name) :
 			f.write("\n")
 	for layer in n.layers :
 		for i in n.layers[layer] :
+			if i.condition != 1 :
+				f.write("set_condition {} {} {}".format(layer, n.layers[layer].index(i), i.condition))
 			for j in i.connected :
 				f.write(find_neuro(n,i)+" "+find_neuro(n,j)+" "+str(i.connected_weight[j]))
 				f.write("\n")
